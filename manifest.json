@@ -1,0 +1,20 @@
+{
+    "name": "Sort the Court - Medieval Decision Making Game",
+    "short_name": "Sort the Court",
+    "description": "Play Sort the Court online for free! Make royal decisions as a king in this addictive medieval strategy game.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fdf4ff",
+    "theme_color": "#9333ea",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "16x16 32x32",
+            "type": "image/x-icon"
+        }
+    ],
+    "categories": ["games", "entertainment"],
+    "lang": "en",
+    "scope": "/"
+}
