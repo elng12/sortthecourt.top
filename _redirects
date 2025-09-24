@@ -1,0 +1,32 @@
+# Netlify redirects file
+# Handle common URL variations and fix 404 issues
+
+# Redirect HTTP to HTTPS
+http://sortthecourt.top/* https://sortthecourt.top/:splat 301!
+http://www.sortthecourt.top/* https://sortthecourt.top/:splat 301!
+
+# Redirect www to non-www
+https://www.sortthecourt.top/* https://sortthecourt.top/:splat 301!
+
+# Handle common game-related URLs that might cause 404s
+/game/* / 301
+/play/* /#play 301
+/sort-the-court/* / 301
+/sortcourt/* / 301
+
+# Handle common file extensions that might be requested
+/index.php / 301
+/index.htm / 301
+/home.html / 301
+
+# Handle common paths that might be crawled
+/sitemap.html /sitemap.xml 301
+/rss.xml / 301
+/feed.xml / 301
+
+# Handle trailing slashes consistently
+/privacy/ /privacy.html 301
+/terms/ /terms.html 301
+
+# Fallback for any other 404s - redirect to homepage
+/* /404.html 404
